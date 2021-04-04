@@ -1,0 +1,55 @@
+body {
+	text-decoration-color: black;
+}
+#header-nav {
+	background-color: #deeff5;
+	border-bottom: 1px solid black;
+}
+#nav-list {
+	text-align: center;
+	color: #7A3803;
+	background-color:#FFDCDB;	
+	margin-top: -5px;
+}
+#nav-list li{
+	font-size: 1.4em;
+	border-bottom: 1px solid black;
+	padding: 8px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #7A3803;
+}
+.container h1{
+	margin-top: -5px;
+}
+#collapsable-nav{
+	height: 127px;
+}
+/* END HEADER */
+.row{
+	background-color: #FFDFD3;
+	margin: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+#nav-list {
+	display: none;
+}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 1199px) {
+#nav-list {
+	display: none;
+}
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+.row{
+	margin-left: 32px;
+	margin-right: 32px;
+}
+}
