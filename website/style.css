@@ -1,16 +1,331 @@
 body{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	color: #1B1B1B;
-	background-color: #61122f;
+	background-color: #faf8ed;
+	line-height: 1.6;
 }
 /** HEADER **/
-#header-nav {
+.navigation-bar {
 	background-color: #f6b319;
-	border-radius: 0;
-	border: 0;
+	height: 100px;
+	padding:-15px -15px;
+	margin:-15px -15px;
+	position: relative;
 }
-#logo-img{
-	background: url('../images/background1.png') no-repeat;
+img{
+	width: 120px;
+	margin-left: 16px;
+	margin-bottom: 6px;
+}
+.table{
+	display: table;
+	margin: 0 auto;
+}
+ul#horizontal-list{
+	list-style: none;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+ul#horizontal-list li{
+	display: inline;
+	font-size: 1em;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+#hero-image {
+	background: url('images/background1.jpg') no-repeat bottom center;
+	background-size: cover;
 	width: 100%;
+	box-shadow: 0 0 50px #3F0C1F;
+	padding-bottom: 8%;
+
 }
+.main-content{
+	text-align: center;
+	padding-top: 80px;
+}
+.main-content h1{
+	font-size: 4em;
+	font-family: Baskerville;
+	color:white;
+}
+.main-content h2{
+	color: white;
+}
+button {
+	background-color: #d4d4d4;
+	padding: 8px 24px;
+	opacity: 0.8;
+	border:0;
+	box-shadow: 0 0 10px #949494;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Baskerville;
+	font-size:0.85em;
+}
+button a:hover {
+	opacity: 1;
+}
+/* END HEADER */
+
+/* FOOTER */
+.footer {
+	background-color: #222;
+	padding-bottom: 12%;
+}
+#hours, #address, #testimonials {
+	font-size: 0.8em;
+	color: white;
+	padding: 2%;
+
+}
+#testimonials {
+	font-style: italic;
+}
+
+/* Simple Responsive Framework. */
+/********** Large devices only **********/
+@media (min-width: 992px) {
+   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+}
+.footer{
+	background-color: #222;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 48%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 97%;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .col-s-1, .col-s-2, .col-s-3, .col-s-4, .col-s-5, .col-s-6, .col-s-7, .col-s-8, .col-s-9, .col-s-10, .col-s-11, .col-s-12 {
+    float: left;
+  }
+  .grid-container section{
+  	grid-column: span 6;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 48%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 74.99%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 97%;
+  }
+}
+
+/** About page **/
+#top-image{
+	background: url('images/people.jpg') no-repeat center center;
+	height: 480px;
+	background-size: cover;
+	box-shadow: 0 0 50px #3F0C1F;
+}
+.company-info{
+	margin-left:16%;
+	margin-right:16%;
+	padding-top:3%;
+}
+/** Service page **/
+#service-image{
+	background: url('images/service-image.png') no-repeat center;
+	background-size: contain;
+	height: 1000px;
+	border:0;
+}
+#picture-collage{
+	background: url('images/picture-collage.png') no-repeat;
+	background-size: contain;
+	height: 480px;
+}
+.service-content{
+	text-align: center;
+	margin-left:16%;
+	margin-right:16%;
+	padding-top:3%;
+}
+/** Contact page **/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left:16%;
+  margin-right:16%;
+}
+
+/** News page **/
+.grid-container{
+	display: grid;
+  	grid-template-columns:repeat(2, 1fr);
+  	justify-content: space-around;
+  	grid-gap: 24px;
+}
+.grid-container section {
+	width:90%;
+	margin: 4%;
+	margin-top: 40px;
+}
+.card {
+	border: 1px solid #ddd1ee;
+	border-radius: 8px;
+	box-shadow: 10px 10px 0 #ddd1ee;
+	box-sizing: border-box;
+	padding: 20px;
+}
+#card-image1 {
+	background: url('images/picture2.jpg') no-repeat center center;
+	background-size: cover;
+	border: 1px solid #ddd1ee;
+	border-radius: 8px;
+	box-shadow: 4px 4px 0 #ddd1ee;
+	box-sizing: border-box;
+	min-height: 160px;
+	min-width: 200px;
+}
+#card-image2{
+	background: url('images/picture8.jpg') no-repeat center center;
+	background-size: cover;
+	border: 1px solid #ddd1ee;
+	border-radius: 8px;
+	box-shadow: 4px 4px 0 #ddd1ee;
+	box-sizing: border-box;
+	min-height: 160px;
+	min-width: 200px;
+
+}
+
