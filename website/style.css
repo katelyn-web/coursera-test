@@ -26,6 +26,7 @@ ul#horizontal-list{
 	position: absolute;
 	top: 10px;
 	right: 20px;
+  box-sizing: border-box;
 }
 ul#horizontal-list li{
 	display: inline;
